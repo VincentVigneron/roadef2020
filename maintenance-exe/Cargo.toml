@@ -1,0 +1,24 @@
+[package]
+name = "maintenance-exe"
+version = "0.1.0"
+authors = ["Vincent Vigneron <vigneron.vincent.49@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+maintenance = {path = "../maintenance"}
+maintenance-json = {path = "../maintenance-json"}
+
+[profile.dev]
+opt-level = 1
+lto = false
+overflow-checks=false
+incremental=true
+
+[profile.release]
+debug = false
+opt-level = 3
+lto = true
+overflow-checks=false
+incremental=false

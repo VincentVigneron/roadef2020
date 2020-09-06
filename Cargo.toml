@@ -1,0 +1,10 @@
+[workspace]
+members = {
+    "maintenance",
+    "maintenance-capnproto",
+    "maintenance-db",
+    "maintenance-exe",
+    "maintenance-json",
+    "maintenance-server",
+    "maintenance-site",
+}

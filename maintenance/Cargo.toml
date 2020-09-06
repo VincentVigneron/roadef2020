@@ -1,0 +1,28 @@
+[package]
+name = "maintenance"
+version = "0.1.0"
+authors = ["Vincent Vigneron <vigneron.vincent.49@gmail.com>"]
+
+[features]
+default = []
+
+serialize = ["serde"]
+
+[dependencies]
+fixedbitset = {version = "0.3"}
+fast-floats = "0.1.2"
+serde = {version = "1.0.106", features = ["derive"], optional = true}
+
+
+[profile.dev]
+opt-level = 1
+lto = false
+overflow-checks=false
+incremental=true
+
+[profile.release]
+opt-level = 3
+lto = true
+overflow-checks=false
+incremental=false
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Maintenance Optimization</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+        <header>Maintenance Optimization</header>
+        <div id="summary">Summary
+            <table id="summary-table" style="display:none;">
+                <tr>
+                    <th>Interventions</th><td id="ninterventions"></td>
+                </tr>
+                <tr>
+                    <th>Days</th><td id="ndays"></td>
+                </tr>
+                <tr>
+                    <th>Resources</th><td id="nresources"></td>
+                </tr>
+                <tr>
+                    <th>Scenarios</th><td id="nscenarios"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <form enctype='multipart.form-data'>
+                <input type='file' name='file' id='file' />
+                <input type='button' id='send-file' value='Send'/>
+                <input type='button' id='send-file-json' value='Send json'/>
+                <!--<progress></progress>-->
+            </form>
+            <canvas id='planning' width='1280' height='320'></canvas>
+        </div>
+        <footer>Footer</footer>
+    <script src='./bootstrap.js'></script>
+  </body>
+</html>

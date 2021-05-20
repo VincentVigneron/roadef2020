@@ -1,0 +1,62 @@
+div#page {
+    border:1px solid purple;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: left;
+}
+
+div {
+    text-align: center;
+}
+
+header {
+    border:2px solid red;
+    width: 100%;
+    height: 10%;
+}
+
+div#summary {
+    border:2px solid green;
+    width: 20%;
+    float: left;
+    margin: 10px 0 10px 5px;
+    height: 80%;
+}
+div#content {
+    border:2px solid blue;
+    float: right;
+    width: 75%;
+    margin: 10px 0 10px 5px;
+    min-height: 500px;
+    _height: 500px;
+}
+
+footer {
+    border:2px solid red;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 0.5rem;
+}
+
+th {
+    background-color: hsl(150, 50%, 50%);
+    color: #ffffff;
+    text-align: left;
+}
+
+td {
+    background-color: hsl(200, 99%, 50%);
+    padding: 0.5rem;
+    color: #ffffff;
+    text-align: right;
+}
